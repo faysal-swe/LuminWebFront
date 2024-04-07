@@ -7,6 +7,7 @@ import Home from './components/Home/Home.jsx';
 import About from './components/About/About.jsx';
 import Product from './components/Product/Product.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import Banner from './components/Banner/Banner.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path:"/",
-        element: <Home/>
+        element: <Banner/>
       },
       {
         path:"about",

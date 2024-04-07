@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/luman_logo.png';
 const Header = () => {
   const navItems = [
+
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
     { title: 'Product', path: '/products' },
+    { title: 'Services', path: '/services' },
     { title: 'Contact Us', path: '/contact' },
   ];
 
