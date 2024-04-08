@@ -1,8 +1,13 @@
-import React from 'react'
+import OurProductDetails from '../OurProductDetailts/OurProductDetails'
 
 function Home() {
   return (
-    <div>This is Home page</div>
+    <div>
+      This is Home page
+
+      <div><OurProductDetails/></div>
+    </div>
+
   )
 }
 
