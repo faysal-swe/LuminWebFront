@@ -1,11 +1,18 @@
 import OurProductDetails from '../OurProductDetailts/OurProductDetails'
+import OurMisson from '../OurMission/OurMission'
+import OurVison from '../OurVision/OurVision'
+import AnimatedBanner from '../AnimatedBanner/AnimatedBanner'
 
 function Home() {
   return (
     <div>
-      This is Home page
+      <div>
+        <OurProductDetails/>
+        <OurMisson/>
+        <OurVison/>
+        <AnimatedBanner/>
 
-      <div><OurProductDetails/></div>
+      </div>
     </div>
 
   )
