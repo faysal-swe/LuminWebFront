@@ -29,8 +29,9 @@ const Services = () => {
             </div>
             <div className='service'>
              <i className='fas-fa-angry'></i>
-             <h2>Quick Support</h2>
-             <p>Complete control on movement of goods and instant information to the customers.</p>
+             <h2>Check Up</h2>
+             <p>Physical inspection of goods before shipment.</p>
+             
             </div>
             <div className='service'>
              <i className=''></i>
@@ -39,8 +40,8 @@ const Services = () => {
             </div>
             <div className='service'>
              <i className=''></i>
-             <h2>Check Up</h2>
-             <p>Physical inspection of goods before shipment.</p>
+             <h2>Quick Support</h2>
+             <p>Complete control on movement of goods and instant information to the customers.</p>
             </div>
             
 
