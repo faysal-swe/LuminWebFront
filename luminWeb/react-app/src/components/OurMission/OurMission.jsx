@@ -5,7 +5,7 @@ const OurMisson = () => {
         <div className='text-center'>
           <h1
             data-aos='zoom-in'
-            style={{ color: '#BED62F' }}
+            style={{ color: '#39A78E' }}
             className='text-3xl md:text-5xl font-extrabold'
           >
             Our Mission
