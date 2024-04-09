@@ -1,9 +1,4 @@
-*{
-    margin: 30px;
-    padding: 0;
-    font-family: "montserrat",sans-serif;
-    font-weight: 400;
-}
+
 .services{
     background: #f1f1f1;
     text-align: center;
@@ -21,7 +16,7 @@
 
 }
 .cen{
-    max-width: 1200px;
+    max-width: 890px;
     margin: auto;
     overflow: hidden;
     padding: 20px;

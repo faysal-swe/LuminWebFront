@@ -8,15 +8,15 @@ const Header = () => {
 
     { title: 'Home', path: '/' },
     { title: 'About', path: '/about' },
-    { title: 'Product', path: '/products' },
+    { title: 'Products', path: '/products' },
     { title: 'Services', path: '/services' },
     { title: 'Contact Us', path: '/contact' },
   ];
 
   return (
-    <AppBar position="static" style={{ backgroundColor: 'white'}}>
+    <AppBar position="static" style={{ backgroundColor: 'white' }}>
       <Toolbar >
-      <img src={logo} alt="Company Logo" width="50" height="20"/>
+      <img src={logo} alt="Company Logo" width="55" height="20"/>
       <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
       {navItems.map((item) => (
         <Button

@@ -1,67 +1,92 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
-function Product1() {
+
+function Product() {
   return (
-    <div>
-      <h1 style={{ textAlign: 'center', font: 'bold', fontWeight: '1000', margin: '25px' }}>Our Poducts</h1>
-      <hr style={{ border: 'none', borderBottom: '10px solid #CADA2A', marginBottom: '10px'}} />
-      
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '100px', padding: '25px', backgroundSize: 'cover',backgroundPosition: 'center'}}>
+    <div class="flex justify-center items-center h-screen">
+
+  <div class="w-1/2 h-1/2 mb-80">
+
+    <Carousel showThumbs={true} showIndicators={false} showStatus={false} infiniteLoop={true} autoPlay={false} interval={3000}>
         
+        <div className="relative">
+          <img src="Product1.jpg" alt="Product 1" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details" className="text-white bg-blue-500 px-4 py-2 rounded-md">Polyester Chips</Link>
+          </div>
+        </div>
+        <div className="relative">
+          <img src="Product1.jpg" alt="Product 1" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details1" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 1</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product2.jpg" alt="Product 2" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details2" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 2</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product3.jpg" alt="Product 3" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details3" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 3</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product4.jpg" alt="Product 4" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details4" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 4</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product5.jpg" alt="Product 5" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details5" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 5</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product6.jpg" alt="Product 6" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details6" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 6</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product7.jpg" alt="Product 7" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details7" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 7</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product8.jpg" alt="Product 8" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details8" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 8</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product9.jpg" alt="Product 9" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details9" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 9</Link>
+          </div>
+        </div>        
+        <div className="relative">
+          <img src="Product10.jpg" alt="Product 10" className="w-full h-auto" />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <Link to="/product-details10" className="text-white bg-blue-500 px-4 py-2 rounded-md">Product 10</Link>
+          </div>
+        </div>        
         
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product1.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover'}} />
-        </div>
-        
 
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product2.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product3.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product4.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product5.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product6.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product7.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product8.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product9.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product10.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        <div style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', borderRadius: '10px', overflow: 'hidden' }}>
-          <img src="Product11.PNG" alt="Product8" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-        </div>
-        
-        {/* Repeat this for the remaining 6 photos */}
-      </div>
-
-      <hr style={{ border: 'none', borderBottom: '10px solid #CADA2A', marginTop: '10px' }} />
-
-
+      </Carousel>
     </div>
-  );
-}
 
-export default Product1;
+
+  </div>
+);
+}
+  
+  export default Product;
